@@ -19,4 +19,4 @@ connda activate visa
 
 pip install -r requirements.txt 
 
-###the database will be MOngoDB
+###the database will be MongoDB
