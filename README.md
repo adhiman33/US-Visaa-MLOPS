@@ -20,3 +20,10 @@ connda activate visa
 pip install -r requirements.txt 
 
 ###the database will be MongoDB
+
+
+###The Workflow of the Project will be
+#1.constants
+#2.entity
+#3.components
+#4.Pipelines
