@@ -32,7 +32,6 @@ class DataValidation:
         """
         Method Name :   validate_number_of_columns
         Description :   This method validates the number of columns
-        
         Output      :   Returns bool value based on validation results
         On Failure  :   Write an exception log and then raise an exception
         """
@@ -47,7 +46,6 @@ class DataValidation:
         """
         Method Name :   is_column_exist
         Description :   This method validates the existence of a numerical and categorical columns
-        
         Output      :   Returns bool value based on validation results
         On Failure  :   Write an exception log and then raise an exception
         """
@@ -85,7 +83,6 @@ class DataValidation:
         """
         Method Name :   detect_dataset_drift
         Description :   This method validates if drift is detected
-        
         Output      :   Returns bool value based on validation results
         On Failure  :   Write an exception log and then raise an exception
         """
@@ -96,9 +93,7 @@ class DataValidation:
 
             report = data_drift_profile.json()
             json_report = json.loads(report)
-
             write_yaml_file(file_path=self.data_validation_config.drift_report_file_path, content=json_report)
-
             n_features = json_report["data_drift"]["data"]["metrics"]["n_features"]
             n_drifted_features = json_report["data_drift"]["data"]["metrics"]["n_drifted_features"]
 
